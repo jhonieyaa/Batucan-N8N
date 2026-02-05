@@ -8,28 +8,47 @@
 </head>
 <body>
 
-<div class="card">
-    <h2>Send Email using n8n</h2>
+<div class="container">
+    <div class="header">
+        <div class="logo">📧 N8N MAILER</div>
+        <p class="subtitle">AUTOMATION ENGINE</p>
+    </div>
 
-    <form method="post" action="https://jhonieyaa.app.n8n.cloud/webhook/send-email">
-        <div class="form-group">
-            <label>To</label>
-            <input type="email" name="to" placeholder="recipient@email.com" required>
+    <div class="card">
+        <h1>Send Email using n8n</h1>
+        <p class="description">Integrate your workflows with premium delivery.</p>
+
+        <form id="emailForm">
+            <div class="form-group">
+                <label>RECIPIENT</label>
+                <input type="email" name="to" id="to" placeholder="recipient@example.com" required>
+            </div>
+
+            <div class="form-group">
+                <label>SUBJECT LINE</label>
+                <input type="text" name="subject" id="subject" placeholder="Enter subject line" required>
+            </div>
+
+            <div class="form-group">
+                <label>MESSAGE</label>
+                <textarea name="message" id="message" rows="5" placeholder="Compose your message..." required></textarea>
+            </div>
+
+            <button type="submit" id="submitBtn">
+                SEND MAIL ➤
+            </button>
+        </form>
+
+        <div id="successMessage" class="success-message">
+            ✅ Email sent successfully!
         </div>
+    </div>
 
-        <div class="form-group">
-            <label>Subject</label>
-            <input type="text" name="subject" placeholder="Email subject" required>
-        </div>
-
-        <div class="form-group">
-            <label>Message</label>
-            <textarea name="message" rows="6" placeholder="Write your message here..." required></textarea>
-        </div>
-
-        <button type="submit">Send Mail 🚀</button>
-    </form>
+    <div class="footer">
+        POWERED BY N8N AUTOMATION ENGINE
+    </div>
 </div>
 
+<script src="script.js"></script>
 </body>
 </html>
