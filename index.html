@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Email | n8n</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+    <h2>Send Email using n8n</h2>
+
+    <form method="post" action="https://jhonieyaa.app.n8n.cloud/webhook-test/send-email">
+        <div class="form-group">
+            <label>To</label>
+            <input type="email" name="to" placeholder="recipient@email.com" required>
+        </div>
+
+        <div class="form-group">
+            <label>Subject</label>
+            <input type="text" name="subject" placeholder="Email subject" required>
+        </div>
+
+        <div class="form-group">
+            <label>Message</label>
+            <textarea name="message" rows="6" placeholder="Write your message here..." required></textarea>
+        </div>
+
+        <button type="submit">Send Mail 🚀</button>
+    </form>
+</div>
+
+</body>
+</html>
